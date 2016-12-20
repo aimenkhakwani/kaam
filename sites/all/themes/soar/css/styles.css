@@ -27,7 +27,7 @@
 .kaamHeader h1, .kaamHeader ul li a{
     color: #323232;
 }
-.kaamHeader ul li a:hover{
+.kaamHeader ul li a:hover, .kaamHeader h1 {
     text-decoration: none;
     color: #000;
 }

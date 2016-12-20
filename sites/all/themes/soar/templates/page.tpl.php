@@ -4,10 +4,15 @@
         <div class="kaamUserMenu">
             <?php if ($logged_in): ?>
                 <?php print render($page['user_menu']); ?>
+            <?php elseif ($is_front): ?>
+                <ul>
+                    <li><a href="<?php $front_page; ?>user/login">Log In</a></li>
+                    <li><a href="<?php $front_page; ?>user/register">Register</a></li>
+                </ul>
             <?php else: ?>
                 <ul>
-                    <li><a href="<?php base_path(); ?>user/login">Log In</a></li>
-                    <li><a href="<?php base_path(); ?>user/register">Register</a></li>
+                    <li><a href="<?php $front_page; ?>login">Log In</a></li>
+                    <li><a href="<?php $front_page; ?>register">Register</a></li>
                 </ul>
             <?php endif; ?>
         </div>
