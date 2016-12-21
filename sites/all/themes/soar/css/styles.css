@@ -57,14 +57,20 @@
     text-align: center;
     margin-bottom: 15px;
 }
-.kaamEachItem .views-field-title {
-    color: #323232;
+.kaamEachItem h2 {
     font-size: 22px;
     padding-top: 10px;
 }
-.kaamEachItem .views-field-commerce-price {
-    color: red;
-    padding-bottom: 5px;
+.kaamEachItem h2 a {
+    color: #323232;
+}
+.kaamEachItem h2 a:hover {
+    color: #000;
+    text-decoration: none;
+    pointer: cursor;
+}
+.kaamEachItem .node-readmore {
+    display: none;
 }
 .kaamEachItem img {
     margin-bottom: 10px;
@@ -77,9 +83,17 @@
 .kaamEachItem .form-submit:hover {
     background-color: #f2f2f2;
 }
-/*Price beneath images
-.kaamEachProduct div.field.field-name-commerce-price.field-type-commerce-price.field-label-hidden {
+/*Price beneath images*/
+.kaamEachItem div.field.field-name-commerce-price.field-type-commerce-price.field-label-hidden {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: red;
+}
+/*.kaamEachItem .views-field-commerce-price{
+    color: red;
+    padding-bottom: 5px;
+}
+  .kaamEachItem .views-field-title {
+  font-size: 22px;
+  padding-top: 10px;
 }*/
