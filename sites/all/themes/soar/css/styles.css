@@ -1,7 +1,7 @@
 /*   Menu & Header */
 .kaamHeader {
     background-color: #ECE8E5;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #DDD5D0;
     margin-bottom: 25px;
 }
@@ -17,29 +17,73 @@
 }
 .kaamHeader ul li{
     display: inline;
-    padding: 10px;
+    /*padding-right: 10px;*/
+}
+.kaamHeader ul li:first-of-type {
+    padding-right: 10px;
 }
 .kaamHeader h1 {
     margin:0;
     padding:0;
     padding-top: 15px;
 }
+.kaamHeader h1:hover {
+    text-decoration: none !important;
+    color: #000;
+}
 .kaamHeader h1, .kaamHeader ul li a{
     color: #323232;
 }
-.kaamHeader ul li a:hover, .kaamHeader h1 {
+.kaamHeader ul li a:hover {
     text-decoration: none;
     color: #000;
 }
 
-/*  Footer  */
+/*   Footer   */
 .kaamFooter {
     background-color: #ECE8E5;
     border-top: 1px solid #DDD5D0;
     margin-bottom: 0;
+    margin-top: 40px;
 }
 .kaamFooter p {
     text-align: center;
     padding: 10px;
     color: #323232;
+}
+
+/*   Products   */
+.kaamEachProduct {
+    text-align: center;
+}
+.kaamEachProduct h2 a{
+    color: #323232;
+    font-size: 22px;
+    padding: 0;
+}
+.kaamEachProduct h2 a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.kaamEachProduct img {
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 5px #b3b3b3;
+}
+
+/*User Nav*/
+.kaamUserNav {
+
+}
+/*Price beneath images*/
+.kaamEachProduct div.field.field-name-commerce-price.field-type-commerce-price.field-label-hidden {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: red;
+}
+.kaamEachProduct .form-submit {
+    width: 50%;
+    background-color: #fff;
+}
+.kaamEachProduct .form-submit:hover {
+    background-color: #f2f2f2;
 }

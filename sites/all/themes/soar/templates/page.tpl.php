@@ -19,9 +19,14 @@
     </div>
 </div>
 <div class="kaamContent">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <?php print render($page['content']); ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 kaamUserNav">
+                <?php print render($page['user_nav']); ?>
+            </div>
+            <div class="col-md-10">
+                <?php print render($page['content']); ?>
+            </div>
         </div>
     </div>
 </div>

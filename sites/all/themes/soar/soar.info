@@ -7,3 +7,4 @@ stylesheets[all][] = css/bootstrap.min.css
 
 regions[user_menu] = User Menu
 regions[content] = Content
+regions[user_nav] = User Nav
