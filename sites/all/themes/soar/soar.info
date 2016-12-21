@@ -5,6 +5,7 @@ core = 7.x
 stylesheets[all][] = css/styles.css
 stylesheets[all][] = css/bootstrap.min.css
 
+regions[main_menu] = Main Menu
 regions[user_menu] = User Menu
 regions[content] = Content
 regions[user_nav] = User Nav

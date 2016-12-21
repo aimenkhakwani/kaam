@@ -1,0 +1,6 @@
+<?php
+    function newproduct_redirect_init() {
+      if (current_path() == 'admin/commerce/products' && user_access('administrator') == FALSE) {
+        drupal_goto('/clothing');
+      }
+    }

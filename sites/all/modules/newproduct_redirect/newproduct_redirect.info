@@ -1,0 +1,5 @@
+name = New Product Redirect
+description = Redirects users when they add a product to the home page.
+package = Custom Modules
+core = 7.x
+files[] = newproduct_redirect.module
