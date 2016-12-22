@@ -18,10 +18,8 @@
         </div>
     </div>
 </div>
-<div class="kaamContent">
-    <div class="container">
-        <?php print render($page['content']); ?>
-    </div>
+<div class="kaamContent container">
+    <?php print render($page['content']); ?>
 </div>
 <div class="kaamFooter">
     <p class="kaamFooterText">&copy; 2016 Kaam. All rights reserved.</p>
