@@ -1,0 +1,5 @@
+name = Login Account
+description = Takes a user to their profile page on login.
+package = Custom Modules
+core = 7.x
+files[] = login_account.module

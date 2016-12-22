@@ -80,6 +80,10 @@ body > div.kaamHeader > div > a:hover {
     margin-bottom: 5px;
     color: #C6035F;
 }
+/*Remove submission details on hme page*/
+.kaamEachItem .submitted {
+    display: none;
+}
 /*.kaamEachItem .views-field-commerce-price{
     color: red;
     padding-bottom: 5px;
