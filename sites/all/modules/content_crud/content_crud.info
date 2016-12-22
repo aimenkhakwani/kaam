@@ -1,0 +1,5 @@
+name = Content Crud
+description = Formats crud functionality for users
+package = Custom Modules
+core = 7.x
+files[] = content_crud.module

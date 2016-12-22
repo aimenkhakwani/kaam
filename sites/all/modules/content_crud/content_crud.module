@@ -1,0 +1,6 @@
+<?php
+    function content_crud() {
+        print '<pre>';
+        var_dump(get_defined_vars());
+        print '</pre>';
+    }
