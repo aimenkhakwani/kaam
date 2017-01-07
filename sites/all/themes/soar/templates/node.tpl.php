@@ -90,31 +90,33 @@
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
-
   <div class="content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
         //   '<pre>';
-        //     var_dump($view_mode);
+        //     var_dump($title);
         //     exit;
         //   '</pre>';
     ?>
-    <?php if($view_mode == "full"): ?>
-        <?php if($content['field_product_image']): ?>
-            <div class="col-md-4">
-                <?php print render($content['field_product_image']); ?>
-            </div>
-            <div class="col-md-8">
-                <?php print render($content); ?>
-            </div>
-        <?php endif; ?>
+    <?php if($type == "product_display" && $view_mode == "full"): ?>
+        <div class="kaamIndividualContentPage">
+            <?php if($content['field_product_image']): ?>
+                <h2><?php print $title; ?></h2>
+                <div class="col-md-3">
+                    <?php print render($content['field_product_image']); ?>
+                </div>
+                <div class="col-md-9">
+                    <?php if ($display_submitted): ?>
+                      <div class="submitted">
+                        <?php print $submitted; ?>
+                      </div>
+                    <?php endif; ?>
+                    <?php print render($content); ?>
+                </div>
+            <?php endif; ?>
+        </div>
     <?php else: ?>
         <?php print render($content); ?>
     <?php endif; ?>

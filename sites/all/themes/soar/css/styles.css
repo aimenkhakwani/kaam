@@ -85,6 +85,15 @@ body > div.kaamHeader > div > a:hover {
 .kaamEachItem .submitted {
     display: none;
 }
+.kaamIndividualContentPage {
+    margin-top: 30px;
+}
+.kaamIndividualContentPage h2 {
+    padding-left: 12px;
+}
+.kaamIndividualContentPage .submitted {
+    padding-bottom: 10px;
+}
 /*.kaamEachItem .views-field-commerce-price{
     color: red;
     padding-bottom: 5px;
