@@ -102,20 +102,22 @@
     ?>
     <?php if($type == "product_display" && $view_mode == "full"): ?>
         <div class="kaamIndividualContentPage">
-            <?php if($content['field_product_image']): ?>
+            <div class="col-md-10">
                 <h2><?php print $title; ?></h2>
-                <div class="col-md-3">
-                    <?php print render($content['field_product_image']); ?>
-                </div>
-                <div class="col-md-9">
-                    <?php if ($display_submitted): ?>
-                      <div class="submitted">
-                        <?php print $submitted; ?>
-                      </div>
-                    <?php endif; ?>
-                    <?php print render($content); ?>
-                </div>
-            <?php endif; ?>
+                <?php if($content['field_product_image']): ?>
+                    <div class="col-md-3">
+                        <?php print render($content['field_product_image']); ?>
+                    </div>
+                    <div class="col-md-9">
+                        <?php if ($display_submitted): ?>
+                          <div class="submitted">
+                            <?php print $submitted; ?>
+                          </div>
+                        <?php endif; ?>
+                        <?php print render($content); ?>
+                    </div>
+                <?php endif; ?>
+            </div>
         </div>
     <?php else: ?>
         <?php print render($content); ?>

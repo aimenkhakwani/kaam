@@ -19,16 +19,7 @@
     </div>
 </div>
 <div class="kaamContent container">
-    <?php if ($is_front): ?>
-        <?php print render($page['content']); ?>
-    <?php else: ?>
-            <div class="col-md-10">
-                <?php print render($page['content']); ?>
-            </div>
-            <div class="col-md-2">
-                <?php print render($page['crud']); ?>
-            </div>
-    <?php endif; ?>
+    <?php print render($page['content']); ?>
 </div>
 <div class="kaamFooter">
     <p class="kaamFooterText">&copy; 2016 Kaam. All rights reserved.</p>

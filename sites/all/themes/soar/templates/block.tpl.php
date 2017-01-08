@@ -53,12 +53,16 @@
   <?php print render($title_suffix); ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-    <?php
-    '<pre>';
-    var_dump();
-    exit;
-    '</pre>';
-    ?>
-    <?php print $content ?>
+    <?php if ($block->subject == "Settings"): ?>
+        <?php
+        // '<pre>';
+        //  var_dump($block);
+        //  exit;
+        // '</pre>';
+        ?>
+        <?php print $content ?>
+    <?php else:?>
+        <?php print $content ?>
+    <?php endif;?>
   </div>
 </div>

@@ -5,7 +5,6 @@
     margin-bottom: 10px;
 }
 .kaamHeader h1{
-    /*PINK color: #C6035F;*/
     color: #ECE8E5;
 }
 .kaamHeader h1 {
@@ -31,7 +30,6 @@
     padding-right: 0;
 }
 .kaamHeader ul li a{
-    /*color: #f2f2f2;*/
     color: #ECE8E5;
 }
 body > div.kaamHeader > div > a:hover {
@@ -53,7 +51,6 @@ body > div.kaamHeader > div > a:hover {
 }
 .kaamEachItem h2 a {
     color: #323232;
-    /*color: #DC1975;*/
 }
 .kaamEachItem h2 a:hover {
     color: #000;
@@ -79,29 +76,29 @@ body > div.kaamHeader > div > a:hover {
     font-size: 16px;
     margin-bottom: 5px;
     color: #C6035F;
-    /*color: #000;*/
 }
 /*Remove submission details on hme page*/
 .kaamEachItem .submitted {
     display: none;
 }
-.kaamIndividualContentPage {
-    margin-top: 30px;
-}
+
+/*     Full Page with Item Details     */
 .kaamIndividualContentPage h2 {
     padding-left: 12px;
+}
+.kaamIndividualContentPage .col-md-3 img {
+    box-shadow: 3px 3px 5px #b3b3b3;
 }
 .kaamIndividualContentPage .submitted {
     padding-bottom: 10px;
 }
-/*.kaamEachItem .views-field-commerce-price{
-    color: red;
-    padding-bottom: 5px;
+.kaamIndividualContentPage .col-md-10 {
+    padding-left: 15px;
 }
-  .kaamEachItem .views-field-title {
-  font-size: 22px;
-  padding-top: 10px;
-}*/
+.kaamIndividualContentPage .col-md-9 > div.field.field-name-field-product.field-type-commerce-product-reference.field-label-hidden {
+    /*adding padding on top of checkout button*/
+    padding-top: 7px;
+ }
 
 /*   Footer   */
 .kaamFooter {
